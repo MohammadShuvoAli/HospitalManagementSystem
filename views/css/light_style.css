@@ -1,0 +1,273 @@
+/* --------------------------------------------------General CSS---------------------------------------------------------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.main_table {
+  width: 65%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: #1100ff;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/*------------------------------------------------Navigation Bar CSS----------------------------------------------------*/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  /* Change this to flex-end to align buttons to the right */
+  align-items: center;
+}
+
+nav button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+nav button a {
+  color: #ffffff;
+  margin-left: 2px;
+  /* Use margin-left instead of margin-right to space buttons */
+}
+
+nav button:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/*---------------------------------------footer css------------------------------------------------------------------------------------*/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+/*---------------------------------------------------sidebar css------------------------------------------------------------------------*/
+.sidebar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  /* Center align the text */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  font-size: 16px;
+  /* Updated font size */
+}
+
+.sidebar button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/*---------------------------------------------------------DASHBOARD TABLE CSS------------------------------------------------------*/
+.dashboard-tables {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-tables th,
+.dashboard-tables td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+.dashboard-tables th {
+  background-color: #f2f2f2;
+}
+
+.dashboard-tables tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dashboard-tables tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+.dashboard-table-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff !important;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-table-button a {
+  color: #ffffff;
+  margin-left: 2px;
+}
+
+/*------------------------------------------------------Dashboard Form CSS------------------------------------------------------------*/
+.dashboard-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.dashboard-form h2 {
+  text-align: center;
+}
+
+.dashboard-form form {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dashboard-form table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+  /* Add bold font weight */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+.dashboard-form select,
+.dashboard-form input[type="text"],
+.dashboard-form input[type="email"],
+.dashboard-form input[type="date"],
+.dashboard-form textarea,
+.dashboard-form input[type="tel"],
+.dashboard-form input[type="time"],
+.dashboard-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+.dashboard-form input[type="radio"] {
+  margin-right: 4px;
+}
+
+.dashboard-form textarea {
+  height: 80px;
+}
+
+.dashboard-form input[type="submit"],
+.dashboard-form input[type="reset"],
+.dashboard-form input[type="checkbox"],
+.dashboard-form input[type="radio"] {
+  display: inline-block;
+  /* Update to inline-block to display buttons in the same line */
+  margin: 0;
+  /* Update to margin: 0 to remove the margin */
+  padding: 8px 16px;
+  margin-top: 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dashboard-form input[type="submit"]:hover,
+.dashboard-form input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+
+/*-------------------------------------------------------ERROR MESSAGE----------------------------------------------------*/
+.error-message #error_messages {
+  color: #ff0000;
+  /* Set the text color to red */
+  font-size: 16px;
+  /* Set the font size to 16px */
+  font-weight: bold;
+  /* Set the font weight to bold */
+  margin-top: 8px;
+  /* Add some top margin for spacing */
+  text-align: center;
+  /* Center align the error message */
+}
+
+#error_messages {
+  color: #ff0000;
+  /* Set the text color to red */
+  font-size: 18px;
+  /* Set the font size to 16px */
+  font-weight: bold;
+  /* Set the font weight to bold */
+  margin-top: 8px;
+  /* Add some top margin for spacing */
+  text-align: center;
+  /* Center align the error message */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*------------------------------------------------------Success Message---------------------------------------------------------*/
+.success-message {
+  color: #06a32b;
+  /* Set the text color to the desired color */
+  font-size: 16px;
+  /* Set the font size to 16px */
+  font-weight: bold;
+  /* Set the font weight to bold */
+  margin-top: 8px;
+  /* Add some top margin for spacing */
+  text-align: center;
+  /* Center align the success message */
+}
+
+#searchResults {
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
